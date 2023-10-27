@@ -1,3 +1,5 @@
+'use client'
+
 // pages/index.js
 import React from 'react';
 //import Tab from '../components/tabcomponent';
@@ -24,7 +26,8 @@ const tabs = [
 export default function TabManager() {
   return (
     <div>
-      <h1 class="" className='bg-slate-700'>Conversion.com, to enter an array of data, just enter the numbers seperated with spaces, ex"12 12 15 17"</h1>
+      <h1 class="" className='bg-slate-700'>Student portal navbar</h1>
+      <br/>
       <TabController tabs={tabs} />
     </div>
   );
