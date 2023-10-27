@@ -10,13 +10,13 @@ import Tab from './tabcomponent';
 
 const tabs = [
   {
-    label: 'Add student',
+    label: 'Add student, click here',
     content: <div>
         Add the add student form component here
         </div>,
   },
   {
-    label: 'All students',
+    label: 'All students, clcik here',
     content: <div>
         Add the student information component here
     </div>,
@@ -26,7 +26,7 @@ const tabs = [
 export default function TabManager() {
   return (
     <div>
-      <h1 class="" className='bg-slate-700'>Student portal navbar</h1>
+      <h1 class="" className='bg-slate-700'>Student portal</h1>
       <br/>
       <TabController tabs={tabs} />
     </div>

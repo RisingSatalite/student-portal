@@ -11,15 +11,15 @@ function TabController({ tabs }) {
   };
 
   return (
-    <span class="">
+    <span class="" className=''>
       <div class="" className="tabs">
         {tabs.map((tab, index) => (
           <button
             type="button"
-            class="p-9 m-1 inline bg-slate-700"
+            class="p-9 m-1 inline bg-orange-700"
             key={index}
             onClick={() => handleTabClick(index)}
-            className={`p-9 m-1 inline bg-slate-700 ${activeTab === index ? 'active' : ''}`}
+            className={`p-9 m-1 inline bg-orange-700 padd ${activeTab === index ? 'active' : ''}`}
           >
             {tab.label}
           </button>
