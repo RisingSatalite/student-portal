@@ -5,12 +5,25 @@ import { useEffec, useState } from 'react'
 const NewStudentForm = () => {
     const [registrationForm, setRegistrationForm] = React.useState([])
 
-    const AddStudent = (firstName, lastName, birthday, grade) =>{
+    const addStudent = (firstName, lastName, birthday, grade) =>{
         fetch('http://localhost:5000/students', {
             method: 'POST',
             header: {'content-type': 'application/json'},
             body: JSON.stringify({firstName, lastName, birthday, grade})
         })
+    }
+
+    const sumbitFOrm = (e) =>{
+        e.preventDefault()
+        const firstName = e.target.firstName.value;
+        const lastName = e.target.lastName.value;
+        const birthday = e.target.birthday.value;
+        const grade = e.target.grade.value;
+        addStudent(firstName, lastName, birthday, grade)
+        e.target.firstName.value = '';
+        e.target.lastName.value = '';
+        e.target.birthday.value = '';
+        e.target.grade.value = '';
     }
 
     return (
