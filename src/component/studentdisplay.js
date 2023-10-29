@@ -10,24 +10,10 @@ function Studentdisplay() {
   const [studentData, setStudentData] = useState([])
 
   useEffect(() => {
-    fetch("https://locahost:5000/student")
+    fetch("https://localhost:5000/student")
     .then(response =>response.json)
     .then(data => setStudentData(data))
   }, []);
-  
-  const addPost = (title) => {
-    fetch("https://locahost:5000/student",{
-    method: "POST",
-    header: {"conent-type": "application/json"},
-    body: JSON.stringify({title})
-  })
-  }
-  const handleSubmit = (e) => {
-    e.preventDefault()
-    const title = e.target.title.value
-    addPost(title)
-    e.target.title.value = "" 
-  }//post to localhost 5000
 
     return (
       <div className="">
@@ -44,7 +30,6 @@ function Studentdisplay() {
               </div>
             </li>
           })}
-
         </ul>
       </div>
     )

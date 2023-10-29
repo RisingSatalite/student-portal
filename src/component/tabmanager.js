@@ -2,9 +2,7 @@
 
 // pages/index.js
 import React from 'react';
-//import Tab from '../components/tabcomponent';
 import TabController from './tabcontroller';
-import Tab from './tabcomponent';
 import Studentdisplay from './studentdisplay';
 import NewStudentForm from './studentform';
 
@@ -30,7 +28,7 @@ const tabs = [
 export default function TabManager() {
   return (
     <div>
-      <h1 class="" className='bg-slate-700'>Student portal</h1>
+      <h1 className='bg-slate-700'>Student portal</h1>
       <br/>
       <TabController tabs={tabs} />
     </div>
