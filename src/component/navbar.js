@@ -4,7 +4,7 @@ import { useState } from "react"
 //Example
 const{tasks = []} = props;
 
-export default function studentdisplay() {
+export default function navbarexample() {
     return (
       <main className="">
         <p>To page1</p>

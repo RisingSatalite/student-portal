@@ -2,20 +2,21 @@
 'use client'
 
 import React from 'react'
+import { useEffect, useState } from 'react'
 
 //get
 
-export default function studentdisplay() {
-  const [studentData, setStudentData] = React.useState([])
+function Studentdisplay() {
+  const [studentData, setStudentData] = useState([])
 
   useEffect(() => {
-    fetch("https://locahost:5000/posts")
+    fetch("https://locahost:5000/student")
     .then(response =>response.json)
-    .then(theData => setStudentData(theData))
+    .then(data => setStudentData(data))
   }, []);
   
   const addPost = (title) => {
-    fetch("https://locahost:5000/posts",{
+    fetch("https://locahost:5000/student",{
     method: "POST",
     header: {"conent-type": "application/json"},
     body: JSON.stringify({title})
@@ -30,10 +31,23 @@ export default function studentdisplay() {
 
     return (
       <div className="">
-        <form>
-          <input name="title"></input>
-          <button></button>
-        </form>
+        All students here
+        <ul className='mt-4'>
+          {studentData.map(post => {
+            <li key={post.id} className='border p-2 flex justify-between items-center'>
+              <div className='flex items-center'>
+                <span>{post.firstName}</span>
+                <span>{post.lastName}</span>
+                <span>{post.birthday}</span>
+                <span>{post.grade}</span>
+
+              </div>
+            </li>
+          })}
+
+        </ul>
       </div>
     )
   }
+
+export default Studentdisplay

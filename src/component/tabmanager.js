@@ -5,6 +5,8 @@ import React from 'react';
 //import Tab from '../components/tabcomponent';
 import TabController from './tabcontroller';
 import Tab from './tabcomponent';
+import Studentdisplay from './studentdisplay';
+import NewStudentForm from './studentform';
 
 //All card are not appearing on the height do to the material in them, why
 
@@ -13,12 +15,14 @@ const tabs = [
     label: 'Add student, click here',
     content: <div>
         Add the add student form component here
+        <NewStudentForm></NewStudentForm>
         </div>,
   },
   {
-    label: 'All students, clcik here',
+    label: 'All students, click here',
     content: <div>
         Add the student information component here
+        <Studentdisplay></Studentdisplay>
     </div>,
   },
 ];
