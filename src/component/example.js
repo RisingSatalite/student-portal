@@ -1,6 +1,8 @@
 'use client'
 import { useEffect, useState } from 'react'
- 
+
+//This is an example of how to do it
+
 const Post = () => {
     const [posts, setPosts] = useState([])
  

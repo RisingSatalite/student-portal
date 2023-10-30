@@ -1,39 +1,48 @@
 {
-    "student":[
-        {
-            "id":1,
-            "firstname":"Jake",
-            "lastname":"",
-            "dateOfBirth":"12/25/2004",
-            "grade":78
-        },
-        {
-            "id":2,
-            "firstname":"Alice",
-            "lastname":"",
-            "dateOfBirth":"10/20/2004",
-            "grade":82
-        },
-        {
-            "id":3,
-            "firstname":"",
-            "lastname":"",
-            "dateOfBirth":"MM/DD/YYYY",
-            "grade":90
-        },
-        {
-            "id":4,
-            "firstname":"",
-            "lastname":"",
-            "dateOfBirth":"MM/DD/YYYY",
-            "grade":0
-        },
-        {
-            "id":5,
-            "firstname":"",
-            "lastname":"",
-            "dateOfBirth":"MM/DD/YYYY",
-            "grade":0
-        }
-    ]
+  "student": [
+    {
+      "firstName": "Jake",
+      "lastName": "",
+      "birthday": "12/25/2004",
+      "grade": 78
+    },
+    {
+      "firstName": "Alice",
+      "lastName": "",
+      "birthday": "10/20/2004",
+      "grade": 82
+    },
+    {
+      "firstName": "",
+      "lastName": "",
+      "birthday": "MM/DD/YYYY",
+      "grade": 90
+    },
+    {
+      "firstName": "",
+      "lastName": "",
+      "birthday": "MM/DD/YYYY",
+      "grade": 0
+    },
+    {
+      "firstName": "",
+      "lastName": "",
+      "birthday": "MM/DD/YYYY",
+      "grade": 0
+    },
+    {
+      "firstName": "test",
+      "lastName": "test1",
+      "birthday": "1015-02-03",
+      "grade": "99",
+      "id": 6
+    },
+    {
+      "firstName": "asdf",
+      "lastName": "ghjk",
+      "birthday": "2000-10-10",
+      "grade": "-99",
+      "id": 7
+    }
+  ]
 }
