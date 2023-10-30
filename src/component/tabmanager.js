@@ -6,11 +6,12 @@ import TabController from './tabcontroller';
 import Studentdisplay from './studentdisplay';
 import NewStudentForm from './studentform';
 
-//All card are not appearing on the height do to the material in them, why
-
+//This is a tab layout that I use, the label will be converted into the navabar and depending on what is press, which show eithor the form or the students
 const tabs = [
   {
+    //FInd how to change the colour for navbar
     label: 'Add student, click here',
+    //This displays the form to enter new student
     content: <div>
         Add the add student form component here
         <NewStudentForm></NewStudentForm>
@@ -18,13 +19,15 @@ const tabs = [
   },
   {
     label: 'All students, click here',
+    //This display the student information
     content: <div>
-        Add the student information component here
+        It takes a secound to load
         <Studentdisplay></Studentdisplay>
     </div>,
   },
 ];
 
+//This compoent take the tabs list and input into the TabController to be displayed
 export default function TabManager() {
   return (
     <div>

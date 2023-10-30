@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react';
 function StudentDisplay() {
   const [studentData, setStudentData] = useState([]);
 
+  //This function get the data form the local host, and then save it to studentData
   useEffect(() => {
     fetch('http://localhost:5000/student')
       .then((response) => response.json())
@@ -10,9 +11,10 @@ function StudentDisplay() {
       .catch((error) => console.error('Error fetching data:', error));
   }, []);
 
+  //This function use map as a for loop to display every student information
   return (
     <div className="">
-      <p>All students here</p>
+      <p>All students</p>
       <ul className='mt-4'>
         {studentData.map((post) => (
           <li key={post.id} className='border p-2 flex justify-between items-center'>
