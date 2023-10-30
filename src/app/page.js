@@ -1,12 +1,12 @@
-import Image from 'next/image'
+import TabManager from "@/component/tabmanager"
+import Footer from "@/component/footer"
 
 export default function Home() {
   return (
     <main className="">
-      <nav>navbar to go to differnet pages
-        defluat<p>student information</p>or<p>student form</p>
-      </nav>
-      <footer>school info, boring stuff ,etc</footer>
+      <TabManager></TabManager>
+      <br/>
+      <Footer></Footer>
     </main>
   )
 }
