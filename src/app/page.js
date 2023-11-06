@@ -1,15 +1,19 @@
 import TabManager from "@/components/tabmanager"
 import Footer from "@/components/footer"
-
-import 'tailwindcss/tailwind.css';
-
+import '../input.css'
 export default function Home() {
   return (
-    <main className="">
-      
-      <TabManager></TabManager>
+    <main>
+      <div className="">
+        <div className=''>
+          <TabManager></TabManager>
+        </div>
       <br/>
-      <Footer></Footer>
+        <div className='fixed bottom-0 text-center w-screen pt-5'>
+          <Footer></Footer>
+        </div>
+      </div>
     </main>
+    
   )
 }
