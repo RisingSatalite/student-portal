@@ -10,7 +10,7 @@ function TabController({ tabs }) {
     setActiveTab(index);
   };
 
-  
+  //This is the navbar file
   return (
     <span class="" className=''>
       <div class="" className="tabs">
