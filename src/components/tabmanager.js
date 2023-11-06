@@ -10,7 +10,9 @@ import NewStudentForm from './studentform';
 const tabs = [
   {
     //FInd how to change the colour for navbar
+
     label: <div>Add student, click here</div>,
+
     //This displays the form to enter new student
     content: <div>
         Add the add student form component here
