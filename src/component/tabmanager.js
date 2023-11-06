@@ -10,7 +10,7 @@ import NewStudentForm from './studentform';
 const tabs = [
   {
     //FInd how to change the colour for navbar
-    label: 'Add student, click here',
+    label: <div>Add student, click here</div>,
     //This displays the form to enter new student
     content: <div>
         Add the add student form component here
@@ -18,7 +18,7 @@ const tabs = [
         </div>,
   },
   {
-    label: 'All students, click here',
+    label: <div>All students, click here</div>,
     //This display the student information
     content: <div>
         It takes a secound to load
