@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-
 function StudentDisplay() {
   const [studentData, setStudentData] = useState([]);
 
@@ -13,11 +12,11 @@ function StudentDisplay() {
 
   //This function use map as a for loop to display every student information
   return (
-    <div className="">
+    <div className="text-lg">
       <p>All students</p>
-      <ul className='mt-4'>
+      <ul className='mt-4 mb-16'>
         {studentData.map((post) => (
-          <li key={post.id} className='border p-2 flex justify-between items-center'>
+          <li key={post.id} className='bg-gray-500 border p-2 flex justify-between items-center'>
             <div className='flex items-center'>
               <span>{post.firstName}</span>
               <span>{post.lastName}</span>

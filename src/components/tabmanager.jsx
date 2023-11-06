@@ -10,18 +10,21 @@ import NewStudentForm from './studentform';
 const tabs = [
   {
     //FInd how to change the colour for navbar
-    label: 'Add student, click here',
+    label: (
+      <div className='text-lg'>
+      Add student, click here
+      </div>
+    ),
     //This displays the form to enter new student
-    content: <div>
-        Add the add student form component here
+    content: <div className='border text-lg bg-slate-600 font-bold mx-9'>
         <NewStudentForm></NewStudentForm>
         </div>,
   },
   {
     label: 'All students, click here',
     //This display the student information
-    content: <div>
-        It takes a secound to load
+    content: <div className='p-4 m-4 bg-green-400'> 
+        It takes a second to load
         <Studentdisplay></Studentdisplay>
     </div>,
   },
@@ -30,8 +33,8 @@ const tabs = [
 //This compoent take the tabs list and input into the TabController to be displayed
 export default function TabManager() {
   return (
-    <div>
-      <h1 className='bg-slate-700'>Student portal</h1>
+    <div className='bg-slate-700 border-l-emerald-500 text-slate-200 text-center text-xl font-bold p-2'>
+      <h1 >Student portal</h1>
       <br/>
       <TabController tabs={tabs} />
     </div>

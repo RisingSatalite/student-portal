@@ -1,5 +1,4 @@
 import React from 'react';
-
 const NewStudentForm = () => {
     const [registrationForm, setRegistrationForm] = React.useState([]);
 
@@ -46,11 +45,11 @@ const NewStudentForm = () => {
     }
 
     return (
-        <form className="text-black" onSubmit={sumbitForm}>
-            <input className='border p-2 text-black' type='text' name='firstName' placeholder="Enter student's first name here" onInput={validateName}></input>
-            <input className='border p-2 text-black' type='text' name='lastName' placeholder="Enter student's last name here" onInput={validateName}></input>
-            <input className='border p-2 text-black' type='date' name='birthday' max={today} placeholder="Enter student's birthday here"></input>
-            <input className='border p-2 text-black' type='number' name='grade' placeholder="Enter student's grade here" min="0" max="100"></input>
+        <form className="text-black justify-center text-center" onSubmit={sumbitForm}>
+            <input className='border p-3 m-1 text-black' type='text' name='firstName' placeholder="First Name" onInput={validateName}></input>
+            <input className='border p-3 m-1 text-black' type='text' name='lastName' placeholder="Last Name" onInput={validateName}></input>
+            <input className='border p-3 m-1 text-black' type='date' name='birthday' max={today} placeholder="Date of Birth"></input>
+            <input className='border p-3 m-1 text-black' type='number' name='grade' placeholder="Grade" min="0" max="100"></input>
             <button className='bg-blue-500 text-white py-1 px-2 rounded' type='submit'>Submit data</button>
         </form>
     )
