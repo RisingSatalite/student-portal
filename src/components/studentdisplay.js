@@ -16,6 +16,7 @@ function StudentDisplay() {
     <div className="">
       <p>All students</p>
       <ul className='mt-4'>
+
         <table>
           <tr>
           <th>First name </th>
@@ -32,6 +33,7 @@ function StudentDisplay() {
             </tr>
         ))}
         </table>
+
       </ul>
     </div>
   );
