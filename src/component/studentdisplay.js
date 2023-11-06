@@ -16,16 +16,22 @@ function StudentDisplay() {
     <div className="">
       <p>All students</p>
       <ul className='mt-4'>
+        <table>
+          <tr>
+          <th>First name</th>
+          <th>Last name</th>
+          <th>Birthday</th>
+          <th>Grade</th>
+          </tr>
         {studentData.map((post) => (
-          <li key={post.id} className='border p-2 flex justify-between items-center'>
-            <div className='flex items-center'>
-              <span>{post.firstName}</span>
-              <span>{post.lastName}</span>
-              <span>{post.birthday}</span>
-              <span>{post.grade}</span>
-            </div>
-          </li>
+            <tr key={post.id} className='flex items-center'>
+              <td>{post.firstName}</td>
+              <td>{post.lastName}</td>
+              <td>{post.birthday}</td>
+              <td>{post.grade}</td>
+            </tr>
         ))}
+        </table>
       </ul>
     </div>
   );
