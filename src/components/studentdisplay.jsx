@@ -13,18 +13,24 @@ function StudentDisplay() {
   //This function use map as a for loop to display every student information
   return (
     <div className="text-lg">
-      <p>All students</p>
+      <p>All students here</p>
       <ul className='mt-4 mb-16'>
+      <table>
+          <tr>
+          <th>First name </th>
+          <th>Last name </th>
+          <th>Birthday </th>
+          <th>Grade</th>
+          </tr>
         {studentData.map((post) => (
-          <li key={post.id} className='bg-gray-500 border p-2 flex justify-between items-center'>
-            <div className='flex items-center'>
-              <span>{post.firstName}</span>
-              <span>{post.lastName}</span>
-              <span>{post.birthday}</span>
-              <span>{post.grade}</span>
-            </div>
-          </li>
+            <tr key={post.id} className='flex items-center'>
+              <td>{post.firstName}</td>
+              <td>{post.lastName}</td>
+              <td>{post.birthday}</td>
+              <td>{post.grade}</td>
+            </tr>
         ))}
+        </table>
       </ul>
     </div>
   );

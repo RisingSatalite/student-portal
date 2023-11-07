@@ -10,6 +10,7 @@ function TabController({ tabs }) {
     setActiveTab(index);
   };
 
+  //This is the navbar file
   return (
     <span class="" className=''>
       <div class="" className="tabs">
@@ -20,7 +21,7 @@ function TabController({ tabs }) {
             class="p-1 border-solid inline bg-orange-200"//Add classes to both class and classname
             key={index}
             onClick={() => handleTabClick(index)}
-            className={`p-1 border-solid inline bg-orange-200 ${activeTab === index ? 'active' : ''}`}
+            className={`p-1 border-solid border-white border-2 inline bg-orange-200 ${activeTab === index ? 'active' : ''}`}
 
           >
             {tab.label}
