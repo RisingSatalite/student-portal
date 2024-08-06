@@ -4,7 +4,7 @@ function StudentDisplay() {
 
   //This function get the data form the local host, and then save it to studentData
   useEffect(() => {
-    fetch('http://localhost:5000/student')
+    fetch('/api/db')
       .then((response) => response.json())
       .then((data) => setStudentData(data))
       .catch((error) => console.error('Error fetching data:', error));

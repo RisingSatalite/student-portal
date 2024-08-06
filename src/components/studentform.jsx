@@ -6,7 +6,7 @@ const NewStudentForm = () => {
     const today = new Date().toISOString().split('T')[0];
 
     const addStudent = (firstName, lastName, birthday, grade) => {
-        fetch('http://localhost:5000/student', {
+        fetch('/api/db', {
             method: 'POST',
             headers: {'content-type': 'application/json'},
             body: JSON.stringify({firstName, lastName, birthday, grade})
