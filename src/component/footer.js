@@ -2,8 +2,8 @@
 
 const Footer = () => {
     //THis is the footer add more infromation about the school here
-    return <footer className="text-black">
-        <div className="">School info, legal ,etc</div>
+    return <footer class="bg-gray-400" className="text-black bg-gray-400">
+        <div className="bg-blue-400">school info, legal ,etc</div>
         <div>Thank you using &quot;insert school name here&quot; school system</div>
     </footer>
 
